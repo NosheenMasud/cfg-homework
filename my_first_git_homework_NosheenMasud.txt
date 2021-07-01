@@ -20,7 +20,7 @@ GIT COMMANDS:
 •	Git pull - Fetch from and integrate with another repository or a local branch
 
 
-Personal notes:
+
 git commit -m 'initial commit'  (always add a message of what you’re adding)
 git push origin main  (inside cfg-homework folder)
 git add .   (. Adds everything, otherwise you can name file you wanna add)
@@ -28,4 +28,4 @@ git init   (Create an empty Git repository or reinitialize an existing one)
 ls 
 rm
 cd
-touch - create files 
+touch <filename> - create files 

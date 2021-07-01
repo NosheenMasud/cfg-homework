@@ -1,0 +1,31 @@
+Definitions for key Git & GitHub terminology
+
+ GIT WORKFLOW FUNDAMENTALS 
+•	Working Directory - Umbrella term, all files / folders e.g. when checked out. Where all the files are that we’re working to
+•	Staging Area - Tracked files / part-of-next-commit files. Git watches these files for changes
+•	Local Repo (head) -  Area of local changes (laptop or PC)
+•	Remote repo (master) - Remote area (Server)
+
+WORKING DIRECTORY STATES: 
+•	Staged –  Staging: preparation. Commit-prepped (area that is prepped for commit)
+•	Modified - Modified files: changes made
+•	Committed – saved the file
+
+GIT COMMANDS: 
+•	Git add  - Add file contents to the index
+•	Git commit  - Record changes to the repository
+•	Git push - Update remote refs along with associated objects
+•	Git fetch - Download objects and refs from another repository, explaining all the new stuff that has been added/updated
+•	Git merge - Join two or more development histories together
+•	Git pull - Fetch from and integrate with another repository or a local branch
+
+
+Personal notes:
+git commit -m 'initial commit'  (always add a message of what you’re adding)
+git push origin main  (inside cfg-homework folder)
+git add .   (. Adds everything, otherwise you can name file you wanna add)
+git init   (Create an empty Git repository or reinitialize an existing one)
+ls 
+rm
+cd
+ 

@@ -1,0 +1,54 @@
+Definitions for key Git & GitHub terminology
+
+ GIT WORKFLOW FUNDAMENTALS 
+•	Working Directory - Umbrella term, all files / folders e.g. when checked out. Where all the files are that we’re working to
+✓ - Yup!
+
+•	Staging Area - Tracked files / part-of-next-commit files. Git watches these files for changes
+✓ - Correct! This is basically our rough draft space - everything here is going to be part of the next
+potential commit (just leaving insights / formal definitions from mark scheme in case they help - answer is fully correct
+& on-point, comments are just to give extra perspective, ignore if not needed!).
+
+•	Local Repo (head) -  Area of local changes (laptop or PC)
+✓ - Yup! This local repo is usually on our computer as well yeah
+•	Remote repo (master) - Remote area (Server)
+✓ - On point! Yeah - this is basically a remote repository / area that everyone or team member/s make changes to
+
+
+
+WORKING DIRECTORY STATES: 
+•	Staged –  Staging: preparation. Commit-prepped (area that is prepped for commit)
+✓ - Yup; files are marked to be comitted, but nothing has happened yet / no commit
+•	Modified - Modified files: changes made
+✓ - Files have updated changes but this not stored in the local repo yet
+•	Committed – saved the file
+✓ - Yup! Changes are now saved and safely stored in the local repo
+
+GIT COMMANDS: 
+•	Git add  - Add file contents to the index
+✓ - yup; files (that are in the working directory) are added to the staging area (like an airport lobby waiting room)
+•	Git commit  - Record changes to the repository
+✓ - Yup! Files are now added to the local repo
+•	Git push - Update remote refs along with associated objects
+✓ Brill - Files here are yeah transferred from the local repo to the remote / remote is updated with the local repo changes
+•	Git fetch - Download objects and refs from another repository, explaining all the new stuff that has been added/updated
+✓ - Exactyl! Git is now 'aware' of what's going on with remote. We don't merge the files into the repo / download them fully,
+but at least GIt is kind of 'aware' that there are other branches and files that exist out there. We basically get files from the remote
+to the local repo, but we don't put it in the working direcotry yet
+•	Git merge - Join two or more development histories together
+✓ - Yup! Mark scheme also notes importantly that merge is used for getting files from local repo into the working directory as well
+•	Git pull - Fetch from and integrate with another repository or a local branch
+✓ - Yeah git pull is basically just downloading all the files. So here, we're doing Git Fetch + Git Merge (get all the files online,
+then download them and place them into our working directory and access them). So git pull is not fully for another repo, it's more
+for getting stuff from the online remote repo usually (or some branch).
+
+
+
+git commit -m 'initial commit'  (always add a message of what you’re adding)
+git push origin main  (inside cfg-homework folder)
+git add .   (. Adds everything, otherwise you can name file you wanna add)
+git init   (Create an empty Git repository or reinitialize an existing one)
+ls 
+rm
+cd
+touch <filename> - create files 

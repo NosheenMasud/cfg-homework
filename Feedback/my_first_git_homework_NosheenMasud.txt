@@ -1,3 +1,5 @@
+Grade: 100% (Brilliant work!)
+
 Definitions for key Git & GitHub terminology
 
  GIT WORKFLOW FUNDAMENTALS 
@@ -52,3 +54,6 @@ ls
 rm
 cd
 touch <filename> - create files 
+
+Q2:
+✓ 

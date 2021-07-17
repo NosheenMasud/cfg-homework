@@ -18,6 +18,7 @@ potential commit (just leaving insights / formal definitions from mark scheme in
 
 
 
+
 WORKING DIRECTORY STATES: 
 •	Staged –  Staging: preparation. Commit-prepped (area that is prepped for commit)
 ✓ - Yup; files are marked to be comitted, but nothing has happened yet / no commit

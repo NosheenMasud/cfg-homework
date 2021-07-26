@@ -14,6 +14,7 @@ For example, method add_item probably accepts some kind of an item?..
 
 """
 
+# Note for Mehdi: I had help with this, as I struggled on my own
 
 class CashRegister:
 

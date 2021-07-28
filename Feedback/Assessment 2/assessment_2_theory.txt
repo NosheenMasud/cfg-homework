@@ -42,11 +42,11 @@ A7: DRY - don't repeat yourself
 
 8.	What is Garbage collector? How does it work?
 A8: Garbage collector - Memory Management Mechanism in Python
-✓ (How? 0.5 mark, description given but no explanation of how it works?)
+✓ (How? 1 mark, description given but no explanation of how it works?)
 
 9.	What are ‘deadlock’ and ‘livelock’ in a relational database?
 A9: Deadlock: When 2 transactions in a database are waiting for the other to unlock itself.
-✓ (0.5 mark - missing livelock)
+✓ (1 mark - missing livelock)
 
 10.	What is Flask and what can we use it for?
 Flask is a web application framework which is used to create programs/websites that speak to APIs and either give or take data/information

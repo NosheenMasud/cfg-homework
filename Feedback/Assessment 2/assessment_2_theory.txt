@@ -1,0 +1,131 @@
+Theory: 49 / 62
+Coding: 23 / 30
+Testing: 3 / 8
+Total: 78 / 100
+Fantastic!
+
+1.	Python theory questions
+
+Section 1: 16/20
+1.	What is the program?
+A1: A program is a series of instructions given to a computer for it to run a task.
+✓
+
+2.	What is the process?
+A2: The process is the program in execution.
+✓
+
+3.	What is Cache?
+A3: The cache is a small area of memory where data/information is held temporarily, if it is likely it'll be reused,
+and can be accessed faster than from the RAM. Caches need to regularly be cleared for optimum use.
+✓
+
+4.	What is Thread and Multithreading?
+A4: Thread: smallest sequence of programmed instructions to be run concurrently.
+    Multithreading: A large number of threads being run either in sequence or one after another, and are reliant upon each other.
+✓ (Not necessarily dependent on each other from my understanding - threads can be independent / just share process resource)
+
+5.	What is GIL in Python and how does it work?
+A5: GIL - Global Interpretor Lock that allows threads to lock the interpretor, to ensure bottlenecks aren't caused.
+    The GIL was a gamechanger for Python and really sets it apart.
+✓
+
+6.	What is Concurrency and Parallelism and what are the differences?
+A6:
+X
+
+7.	What do these stand for in programming: DRY, KISS, BDUF
+A7: DRY - don't repeat yourself
+    KISS - keep it simple stupid
+    BDUF - big design up front
+✓ (Make sure to explain these tho next time! E.g. simple sentence to explain what is each)
+
+8.	What is Garbage collector? How does it work?
+A8: Garbage collector - Memory Management Mechanism in Python
+✓ (How? 0.5 mark, description given but no explanation of how it works?)
+
+9.	What are ‘deadlock’ and ‘livelock’ in a relational database?
+A9: Deadlock: When 2 transactions in a database are waiting for the other to unlock itself.
+✓ (0.5 mark - missing livelock)
+
+10.	What is Flask and what can we use it for?
+Flask is a web application framework which is used to create programs/websites that speak to APIs and either give or take data/information
+to/from databases like SQL, like booking systems or information websites
+✓
+
+--Q2.	Discuss the difference between Python 2 and Python 3
+The main difference between Python 2 and Python 3 is python 3 is easier to use, more intuitive, and easier to learn for a complete beginner.
+But Python 2 has some libraries which have not been updated to python 3, so moving from one to another is a timely and costly process.
+Some of teh diffeerences between them is that python 2 has different syntax for the print statement and how unicode is handled.
+These are not compatible with python 3.
+
+6/8
+Feedback:
+I think pass on some examples for the different syntax (e.g. for print) or unicode as well? Something to supplement the answer for additional marks
+Discuss how Python is maintaned or used - for example, do companies use Python 2 or Python 3? Why don't they switch, etc?
+In general, go incredibly in depth for a 8-marker; answers here are good, but aiming to see depth more - e.g. examples for the
+differences, explanations of arguments (e.g. Python 3 is easier to use - yes, but why is it easier? What makes it more intuitive?)
+
+--Q5.	Agile methodology, Scrum: name at least 3 types of meetings that are exercised by Agile teams and describe the objective of each meeting.
+Daily Scrum: to go over any issues that may arise or identify ways in which developers can work together or their work may overlap.
+Attended by scrum master, developer team and product owner.
+
+Planning meeting - to discuss what is in scope and out of scope in the upcoming scrum cycle.
+(^ Do you mean Sprint planning?)
+
+Scrum Review: to show what has been developed in terms of software to management and stakeholders.
+
+7/8
+Feedback:
+Not sure what planning meeting is?
+
+--Q6.	Exception handling in Python, explain what each of the following blocks means in the program flow:
+Try: Run this piece of code
+except: If it doesn't run correctly (creates an error), dont break the code but continue to this and recognise it as an error - and print any accompanying message
+else: If there is an error and it goes to except, then try this (<--- X meant more for code to execute if NO error was raised)
+finally: this should be the last piece of code that is run in the block of code
+
+6/8
+Feedback:
+Careful of the else part
+
+--7.	How can we connect a Python program (process) with a database? Explain how it works and how do we fetch / insert data into DB tables from a python program.
+A7: A python program can be connected to a website server that acts as (or is) an API to which you can send and receive information. You can make requests to
+the API and it will give you responses in the form of information/data. The database is what sits behind the API and stores all the information.
+The API creates, updates, reads or deletes infromation from the databse as instructed to by the user. The user has to have 2 files to do this,
+one to act as the client, instructing the API, and one to act as the API. The API file needs to be connected to a database.
+
+To do this, there are 4 commands:
+1. PUT - to update data
+2. POST - to create/upload data
+3. GET - to read/download data
+4. DELETE - to delete data
+
+8/8
+Feedback:
+Great work! Consider engine and 'cursor' as well to supplement
+
+-- 8.	Given two SQL tables below: authors and books.
+The authors dataset has 1M+ rows
+The books dataset also has 1M+ rows
+Create an SQL query that shows the TOP 3 authors who sold the most books in total!
+
+SELECT a.author_name, b.sold_copies
+FROM AUTHORS a
+RIGHT JOIN BOOKS b
+ON a.book_name = b.book_name
+GROUP BY a.author_name DESC;
+
+(limit results to 10 rows
+
+6/10
+Feedback:
+Not able to get the query working on my end? I think it may be because of the GROUP BY (which is used without aggregation of the author name?)
+The intended approach would be to SUM the sold_copies of the second table, then group that aggregation by the authors_name (like above
+but by summarising the book sales) - after which, order it by the sold copies in DESC manner
+
+There are parts of this already existing within the query, but the query itself slightly misses the mark and does not execute
+correctly (please let me know if it does execute on your end tho - do not want to mark badly in the instance where it's my environment
+misleading me / im at fault).
+
+Good attempt overall tho - I understand where you're going easily, brill work

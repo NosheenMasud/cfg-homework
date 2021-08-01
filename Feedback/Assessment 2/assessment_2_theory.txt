@@ -1,7 +1,7 @@
 Theory: 49 / 62
 Coding: 23 / 30
 Testing: 3 / 8
-Total: 78 / 100
+Total: 79 (+1 SQL adjustment) / 100
 Fantastic!
 
 1.	Python theory questions
@@ -127,5 +127,13 @@ but by summarising the book sales) - after which, order it by the sold copies in
 There are parts of this already existing within the query, but the query itself slightly misses the mark and does not execute
 correctly (please let me know if it does execute on your end tho - do not want to mark badly in the instance where it's my environment
 misleading me / im at fault).
+
+Feedback 2: (Adjusting marks - had a issue on my end!)
+7/10 
+The query works - the issue however is that you are not ordering by the authors best_seller-ness,
+and as a result you're just displaying random authors alongside some book they have sold
+To extend, focus on:
+Add a SUM function to your query - this will aggregate it by the number of (sum) sold copies
+Add a limiter - if there's more than 3 authors they may all display, try doing only TOP 3 or LIMIT 3
 
 Good attempt overall tho - I understand where you're going easily, brill work

@@ -58,7 +58,7 @@ target_sum = 10
 for num_1 in list:
     for num_2 in list:
         if num_1 + num_2 == target_sum and num_1 != num_2:
-                print([num_1, num_2])
+            print([num_1, num_2])
         else:
             pass
 

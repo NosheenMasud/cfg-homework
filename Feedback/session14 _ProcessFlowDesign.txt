@@ -1,0 +1,59 @@
+Homework: Lesson 14 – Process Flow Design
+
+Question 1
+Design a cinema booking system.
+Think how you would approach the problem and what are potential ways of solving it?
+You do not need to write actual code, but describe the high-level approach:
+• Draw a list of key requirements
+• What are your main considerations?
+• What would be your common or biggest problems?
+• What components or tools would you potentially use?
+• You are welcome to draw a diagram (a very simple one) for the process flow to explain how it is going to work.
+
+
+# key requirements:
+
+- a system that can:
+    -  book, cancel, amend, update booking information
+    -  manage group bookings
+    -  manage discounts and promotions
+    -  be able to visually show seating plans and allow customers to choose where to sit
+    -  hold customer profiles, details and purchase history and store receipts
+    -  hold all film screening information and be regularly updatable, change in live time
+    -  be able to scan a barcode or QR code to print tickets if necessary
+    -  manage mailing lists and permissions for these
+
+- a relational database that can hold all the above information (cinema viewings, bookings, customer details, payment details, viewing details)
+✓✓ what are your main considerations? ^ is key requirements, below is other cons?
+
+# Other considerations:
+
+- Waiting lists for cancellations or preview viewings
+- taking into consideration social distancing and ensuring bookings have adequate empty spaces between them
+-  being able to save/retrieve bookings and hold transaction data
+-  admin issues: logins, check credentials, manage forgotten password retrieval
+✓
+
+# common or biggest problems:
+
+- Ensure no double bookings for seats
+- Ensure only number of tickets sold per viewing that the theatre can accommodate
+- Data privacy – for all data held
+- Ensure data all held safely and securely
+✓
+
+# Components / tools to use:
+
+-  SQL  (for database)
+-  Python (for back end)
+-  HTML/Javascript (for front end)
+-  servers
+✓✓ (what would the servers be for? only one missing a bracket explanation, Im guessing
+just to host this all / website etc?)
+
+- payment processing systems:
+  -	Stripe
+  -	Paypal
+  -	ApplePay
+^ Many of these hav e their own API usually too, particularly Stripe!
+✓
